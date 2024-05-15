@@ -88,3 +88,6 @@
 .botao > i {
     border: 1px solid black;
 }
+.sep{
+    height: 120px;
+}
