@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Menu{
+    /* definindo a altura e cor */
+    height: 120px;
+    width: 100%;
+    background-color: #004aad ;
+
+    /* display do menu */
+    display: flex;
+    align-items: center;
+
+    /* posição do menu */
+    position:fixed;
+}
+
+.mini_menu{
+    /* border: 2px solid black; */
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap:12%;
+    justify-content: center;
+}
+
+.menu_esq{
+    /* border: 1px solid rebeccapurple; */
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.menu_dir{
+    /* border: 1px solid red; */
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1.8%;
+}
+
+
+
+.menu_icone_prefeitura{
+    /* border: 1px solid black; */
+    margin-left: 0;
+}
+
+.menu_icone_eptran{
+    /* border: 1px solid black; */
+    margin-right: 1%;
+}
+
+.menu_icone_prefeitura > img {
+    width: 200px;
+}
+
+.menu_inicio{
+    /* border: 1px solid black; */
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.botao{
+    padding: 13px 48px 13px 40px;
+    border-radius:6% / 20%; 
+    background-color: azure; 
+    font-size: 22px;
+    text-decoration: none;
+    color: black; 
+    display: flex;
+    justify-content: start;
+    gap: 8%;
+}
+
+
+
+.sep{
+    height: 120px;
+}
+
+.jogos{ 
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
+}
+
+.conteudo{
+    display: flex;   
+    justify-content: center;
+    /* margin: 70px; */
+    gap: 5%;   
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: auto;
+    height: 600px;
+}
+
+
+.c{
+    width: 25%;
+    /* border: 1PX SOLID BLACK; */
+
+}
+img {
+     width: 100%;
+     /* border: 1PX SOLID BLACK; */
+}
