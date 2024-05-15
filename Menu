@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_menu.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Cadastro</title>
+    <title>Prefeitura de Joinville</title>
 </head>
 <body>
     <!-- definindo as seçoes (div) -->
@@ -17,7 +17,7 @@
                 <img src="../css/img/logo_prefeitura.png" alt="Logo_Prefeitura">
             </div>
         </div>
-        <div class="mini_menu">
+        <div class="mini_menu" id="mini_menu">
             <div class="menu_inicio">
             <a href="#" class="botao">
                 <i class='bx bx-home-alt-2'></i>
@@ -49,10 +49,4 @@
             </div>
         </div>
     </header>
-
-    <!-- conteudo -->
-    <section>
-
-    </section>
-</body>
-</html>
+    <div class="sep"></div>
