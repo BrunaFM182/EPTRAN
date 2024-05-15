@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura de Joinville</title>
+    <link rel="stylesheet" href="layout.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- definindo as seçoes (div) -->
 
+    <!-- topo da pag -->
+    <header class="Menu">
+        <div class="menu_esq">
+            <div class="menu_icone_prefeitura">
+                <img src="../img/logo_prefeitura.png" alt="Logo_Prefeitura">
+            </div>
+        </div>
+        <div class="mini_menu">
+            <div class="menu_inicio">
+            <a href="#" class="botao">
+                <i class='bx bx-home-alt-2'></i>
+                INICIO
+            </a>
+            </div>
+            <div class="menu_videos">
+                <a href="#" class="botao">
+                    <i class='bx bx-movie-play'></i>
+                    VÍDEOS
+                </a>
+            </div>
+            <div class="menu_jogos">
+                <a href="#" class="botao">
+                    <i class='bx bx-game'></i>
+                    JOGOS
+                </a>
+            </div>
+            <div class="menu_contatos">
+                <a href="#" class="botao">
+                    <i class='bx bx-chat' ></i>
+                    CONTATOS
+                </a>
+            </div>
+        </div>
+        <div class="menu_dir">
+            <div class="menu_icone_eptran">
+                <img src="../img/logo_eptran.png" alt="Logo_Prefeitura">
+            </div>
+        </div>
+    </header>
+
+    <!-- conteudo -->
+    <section>
+
+    </section>
+
+    <div class="con_parent">
+
+        <div class="header">
+            <header>
+
+            </header>
+        </div>  
+        <div class="body">
+
+                <div class="formulario">
+                    <h1>LOGIN</h1>
+                    <form action="processamento.php" method="get"> 
+
+                        <div class="informacao">
+
+                            <label for="nome"><span>Nome:</span>
+                                <input class="dados" type="text" name="Nome" id="nome">
+                            </label>
+                            
+                            <label for="Senha"><span>Senha:</span>
+                            <input class="dados" type="password" id="pass" name="password" minlength="8" required />
+                            </label>
+
+                            </div>
+
+                            <div class="sex">
+
+                            <label class="LembrarLogin"  for="LembrarLogin">
+                                <input type="radio"> <i>Lembrar Login</i>
+                            </label>
+
+                            <a class="EsqueceuSenha" href="https://fonts.google.com/selection/embed"><i>Esqueceu a senha?</i></a>
+
+                        </div>
+
+                        <input class="enviar"  type="submit" value="ENTRAR">
+
+                    </form>
+            </div>
+        </div>
+    
+    </div>
+
+</body>
+</html>
