@@ -6,34 +6,39 @@
     box-sizing: border-box;
 }
 
-.sep{
-    height: 120px;
+* input{
+    font-size: 100%;
+}
+
+body{
+    background-color: white ;
 }
 
 .conteudo_1{
-    border: 1px solid red;
-
+    /* border: 1px solid red; */
+    height: 1350px;
     width: 100%;
-    height: 850px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .Formulario{
-    border: 1px solid black;
-    width: 50%;
-    height: 80%;
+    border: 3px solid black;
+    width: 1200px;
+    height: 1200px;    
     display: flex;
     flex-flow:  row wrap;    
     justify-content: start;
     border-radius: 10px;
+    margin-top: 3%;
+    background-color: #e2eff8;
 }
 
 .Formulario_titulo {
     width: 100%;
     /* border: 1px solid black; */
-    height: 17%;
+    height: 16%;
 
     display: flex;
     justify-content: center;
@@ -50,32 +55,33 @@
 
 .form_1{
     /* border: 1px solid black; */
-    width: 70%;
-    height: 85%;
+    width: 100%;
+    height: 84%;
+}
+
+.esq_form1{
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 91%;
     padding-left:10% ;
 
     display: flex;
     flex-flow:   column;
 }
 
-.form_1 > * {
-    /* display: inline; */
-    height: 4%;
-    margin-top: 5%;
-    
-}
 
 .cadastro_filhos {
     /* border: 1px solid black; */
     display: flex;
     flex-flow: row;
     width: 100%;
-    height: 8%;
+    height: 12%;
     font-size: 120%;
     font-family:"Open Sans", sans-serif; ;
 
     display: flex;
     align-items: center;
+    margin-top: 1%;
 }
 .cadastro_filhos >  input {
     margin-left: 4%;
@@ -83,7 +89,7 @@
     text-align: center;
     width: 50%;
     padding-left: 2%;
-    height: 95%;
+    height: 60%;
 }
 
 .cadastro_filhos > #cadastro_date{
@@ -95,16 +101,16 @@
 }
 
 #Feminino_form1{
-    width: 4%;
+    width: 3%;
     margin-right:2%
 }
 #Masculino_form1{
-    width: 4%;
+    width: 3%;
     margin-right:2%
 }
 
 #Não_definido_form1{
-    width: 4%;
+    width: 3%;
     margin-right:2%
 }
 
@@ -113,8 +119,103 @@
 }
 
 .Rua{
-    width: 90%;
+    display: none;
 }
-.Escola{
+
+.Telefone{
+    display: none;
+}
+
+.Bairro{
+    display: none;
+}
+
+.Cidade{
+    display: none;
+}
+
+.Envio_Reset{
+    width: 100%;
     /* border: 1px solid black; */
+    height: 9%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2%;
+    padding-right: 2%;
+}
+
+.Botao_er{
+    border: none;    
+    border-radius: 15%/ 60%;
+
+    width: 15%;
+    height: 60%;
+}
+
+#Botao_reset{
+    background-color: #486590;
+    color: white;
+    font-size: 150%;
+    font-style: italic;
+}
+
+#Botao_envio{
+    background-color: #004aad;
+    color: white;
+    font-size: 150%;
+    font-style: italic;
+}
+
+
+@media (max-width:800px) {
+    .conteudo_1{
+        height: 1550px;
+    }
+
+    .Formulario{
+        height: 1400px;
+    }
+
+    .Rua{
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        margin-top: 1%;    }
+    
+    .Telefone{
+        display: flex;
+        align-items: center;
+        margin-top: 1%;
+        /* border: 1px solid black; */
+    }
+
+    .Rua_Telefone{
+        display: none;
+    }
+
+    .cadastro_telefone{
+        margin: 0;
+    }
+
+    .Bairro_Cidade{
+        display: none;
+    }
+
+    .Bairro{
+        display: flex;
+    }
+    
+    .Cidade{
+        display: flex;
+    }
+
+    .cadastro_filhos > input {
+        width: 55%;
+    }
+
+    .Botao_er{
+        width: 20%;
+    }
 }
