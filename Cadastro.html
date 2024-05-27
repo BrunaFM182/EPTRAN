@@ -6,51 +6,10 @@
     <link rel="stylesheet" href="../css/style_menu.css">
     <link rel="stylesheet" href="../css/style_conteudo.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Prefeitura de Joinville</title>
+    <title>Cadastro</title>
 </head>
 <body>
     <!-- definindo as seçoes (div) -->
-
-    <!-- topo da pag -->
-    <header class="Menu">
-        <div class="menu_esq">
-            <div class="menu_icone_prefeitura">
-                <img src="../css/img/logo_prefeitura.png" alt="Logo_Prefeitura">
-            </div>
-        </div>
-        <div class="mini_menu" id="mini_menu">
-            <div class="menu_inicio">
-            <a href="#" class="botao">
-                <i class='bx bx-home-alt-2'></i>
-                INICIO
-            </a>
-            </div>
-            <div class="menu_videos">
-                <a href="#" class="botao">
-                    <i class='bx bx-movie-play'></i>
-                    VÍDEOS
-                </a>
-            </div>
-            <div class="menu_jogos">
-                <a href="#" class="botao">
-                    <i class='bx bx-game'></i>
-                    JOGOS
-                </a>
-            </div>
-            <div class="menu_contatos">
-                <a href="#" class="botao">
-                    <i class='bx bx-chat' ></i>
-                    CONTATOS
-                </a>
-            </div>
-        </div>
-        <div class="menu_dir">
-            <div class="menu_icone_eptran">
-                <img src="../css/img/logo_eptran.png" alt="Logo_Prefeitura">
-            </div>
-        </div>
-    </header>
-    <div class="sep"></div>
     <!-- conteudo -->
     <section>
         <div class="conteudo_1">
@@ -59,61 +18,87 @@
                     <h1>CADASTRO</h1>
                 </div>
                 <form action="#" class="form_1">
-                    <div class="Nome cadastro_filhos">
-                        <label for="cadastro_nome">Nome Completo:</label>
-                        <input type="text" id="cadastro_nome" name="cadastro_nome">
-                    </div>
-                    <div class="Data cadastro_filhos">
-                        <label for="cadastro_nome">Data de nascimento:</label>
-                        <input type="date" id="cadastro_date" name="cadastro_date">
-                    </div>
-                    <div class="Genero cadastro_filhos">
-                        <label for="cadastro_genero">Gênero:</label>
-                        <input type="checkbox" id="Feminino_form1" name="Feminino" value="Feminino" class="input_genero">
-                        <label for="Feminino_form1" class="label_genero">Feminino</label>
-                        <input type="checkbox" id="Masculino_form1" name="Masculino" value="Masculino" class="input_genero">
-                        <label for="Masculino_form1" class="label_genero">Masculino</label>
-                        <input type="checkbox" id="Não_definido_form1" name="Não definido" value="Não definido" class="input_genero" checked="checked">
-                        <label for="Não definido" class="label_genero">Não definido</label>
-                    </div>
-                    <div class="Rua Telefone cadastro_filhos">
-                        <label for="cadastro_rua">Rua:</label>
-                        <input type="text" id="cadastro_rua" name="cadastro_rua">
+                    <div class="esq_form1">
+                        <div class="Nome cadastro_filhos">
+                            <label for="cadastro_nome">Nome Completo:</label>
+                            <input type="text" id="cadastro_nome" name="cadastro_nome" required>
+                        </div>
+                        <div class="Email cadastro_filhos">
+                            <label for="cadastro_Email">Email:</label>
+                            <input type="email" id="cadastro_Email" name="cadastro_Email" required>
+                        </div>
+                        <div class="Email cadastro_filhos">
+                            <label for="cadastro_Senhal">Crie uma senha:</label>
+                            <input type="password" id="cadastro_Email" name="cadastro_senha" required>
+                        </div>
+                        <div class="Email cadastro_filhos">
+                            <label for="cadastro_Senhal">Repita sua senha:</label>
+                            <input type="password" id="cadastro_senha_r" name="cadastro_senha_r" required>  
+                        </div>
+                        <div class="Data cadastro_filhos">
+                            <label for="cadastro_nome">Data de nascimento:</label>
+                            <input type="date" id="cadastro_date" name="cadastro_date" required>
+                        </div>
+                        <div class="Genero cadastro_filhos">
+                            <label for="cadastro_genero">Gênero:</label>
+                            <input type="radio" id="Feminino_form1" name="Genero_escolhido" value="Feminino" class="input_genero">
+                            <label for="Feminino_form1" class="label_genero">Feminino</label>
+                            <input type="radio" id="Masculino_form1" name="Genero_escolhido" value="Masculino" class="input_genero">
+                            <label for="Masculino_form1" class="label_genero">Masculino</label>
+                            <input type="radio" id="Não_definido_form1" name="Genero_escolhido" value="Não definido" class="input_genero" checked="checked">
+                            <label for="Não definido" class="label_genero">Não definido</label >
+                        </div>
+                        <div class="Rua_Telefone cadastro_filhos">
+                            <label for="cadastro_rua">Rua:</label>
+                            <input type="text" id="cadastro_rua" name="cadastro_rua" required>
+                            
+                            <label for="cadastro_telefone" class="cadastro_telefone">Telefone:</label>
+                            <input type="tel" id="cadastro_telefone" name="cadastro_telefone" required autocomplete="tel">
+                        </div>
+                        <div class="Rua cadastro_filhos">
+                            <label for="cadastro_rua">Rua:</label>
+                            <input type="text" id="cadastro_rua" name="cadastro_rua" required>
+                        </div>
+                        <div class="Telefone cadastro_filhos">
+                            <label for="cadastro_telefone" class="cadastro_telefone">Telefone:</label>
+                            <input type="tel" id="cadastro_telefone" name="cadastro_telefone" required autocomplete="tel">
+                        </div>
+                        <div class="Bairro_Cidade cadastro_filhos">
+                            <label for="cadastro_bairro">Bairro:</label>
+                            <input type="text" id="cadastro_bairro" name="cadastro_bairro" required>
 
-                        <label for="cadastro_telefone" class="cadastro_telefone">Telefone:</label>
-                        <input type="tel" id="cadastro_telefone" name="cadastro_telefone">
+                            <label for="cadastro_cidade" class="cadastro_telefone">Cidade:</label>
+                            <input type="tel" id="cadastro_cidade" name="cadastro_cidade" required>
+                        </div>
+                        <div class="Bairro cadastro_filhos">
+                            <label for="cadastro_bairro">Bairro:</label>
+                            <input type="text" id="cadastro_bairro" name="cadastro_bairro" required>
+                        </div>
+                        <div class="Cidade cadastro_filhos">
+                            <label for="cadastro_cidade" class="cadastro_telefone">Cidade:</label>
+                            <input type="tel" id="cadastro_cidade" name="cadastro_cidade" required>
+                        </div>
+                        <div class="Escola cadastro_filhos">
+                            <label for="cadastro_escola">Grau de Escolariedade:</label>
+                            <input type="list" list="cadastro_grau_escolariedade_opcoes" id="cadastro_grau_escolariedade" name="cadastro_escola" value="" onsubmit="validateInput()">
+                            <datalist id="cadastro_grau_escolariedade_opcoes">
+                                <option value="Fundamental.">
+                                <option value="Médio.">
+                                <option value="Superior (Graduação).">
+                                <option value="Pós-graduação.">
+                                <option value="Mestrado.">
+                                <option value="Doutorado.">
+                                <option value="Outros.">
+                        </div>     
+                    </div>        
+                    <div class="Envio_Reset">
+                        <input type="reset" value="Limpar" class="Botao_er" id="Botao_reset">
+                        <input type="submit" value="Cadastrar" class="Botao_er" id="Botao_envio">
                     </div>
-                    <div class="Bairro Cidade cadastro_filhos">
-                        <label for="cadastro_bairro">Bairro:</label>
-                        <input type="text" id="cadastro_bairro" name="cadastro_bairro">
-
-                        <label for="cadastro_cidade" class="cadastro_telefone">Cidade:</label>
-                        <input type="tel" id="cadastro_cidade" name="cadastro_cidade">
-                    </div>
-                    <div class="Escola cadastro_filhos">
-                        <label for="cadastro_escola">Escola:</label>
-                        <input list="cadastro_grau_escolariedade_opcoes"" id="cadastro_grau_escolariedade" name="cadastro_escola">
-                        <datalist id="cadastro_grau_escolariedade_opcoes">
-                            <option value="Fundamental.">
-                            <option value="Médio">
-                            <option value="Superior (Graduação)">
-                            <option value="Pós-graduação.">
-                            <option value="Mestrado.">
-                            <option value="Doutorado.">
-                            <option value="Outros.">
-                                
-                    </div>
-                    <input type="submit" value="Submit">
                 </form>
             </div>
         </div>
         
     </section>
-        <h3>Window size is <span class="window-size"></span></h3>
-    <p>Knowing this number you can make decisions based in breakpoints of window.</p>
-    <hr>
-    <h3>Screen size is <span class="screen-size"></span></h3>
-    <p>Here you have an idea of device screen size. </p>
-    <script src="../js/script.js"></script>
 </body>
 </html>
