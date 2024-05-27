@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura de Joinville</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- definindo as seçoes (div) -->
+
+    <!-- topo da pag -->
+    <header class="Menu">
+        <div class="menu_esq">
+            <div class="menu_icone_prefeitura">
+                <img src="../img/logo_prefeitura.png" alt="Logo_Prefeitura">
+            </div>
+        </div>
+        <div class="mini_menu">
+            <div class="menu_inicio">
+            <a href="#" class="botao">
+                <i class='bx bx-home-alt-2'></i>
+                INICIO
+            </a>
+        </div>
+            <div class="menu_videos">
+                <a href="#" class="botao">
+                    <i class='bx bx-movie-play'></i>
+                    VÍDEOS
+                </a>
+            </div>
+            <div class="menu_jogos">
+                <a href="#" class="botao">
+                    <i class='bx bx-game'></i>
+                    JOGOS
+                </a>
+            </div>
+            <div class="menu_contatos">
+                <a href="#" class="botao">
+                    <i class='bx bx-chat' ></i>
+                    CONTATOS
+                </a>
+            </div>
+        </div>
+        <div class="menu_dir">
+            <div class="menu_icone_eptran">
+                <img src="../img/logo_eptran.png" alt="Logo_Prefeitura">
+
+            </div>
+        </div>
+    </header>
+    <div class="sep"></div>
+
+    <div class="menu_linha">
+        <a href="#" >
+            <img src="../img/Bem vindo.png" alt="linhas" class="linhas">
+        </a>
+        <p>ESCOLA PÚBLICA DE TRÂNSITO DE JOINVILLE - EPTRAN</p>
+    </div>
+
+    <section>
+
+    <div class="informações">
+    </div>
+
+    </section>
+
+<!-- ---------------------------------------------------------- -->
+
+<div class="conteudo">
+    <div class="caixa_texto">
+
+        <div class="titulo">
+            <h1>Saiba Mais</h1>
+        </div>
+
+        <div class="texto">
+            <p>A empresa EPTRAN, Escola Pública de Trânsito de Joinville (município) que faz parte do CONTRAN, Conselho Nacional de Trânsito (país), tem o intuito de valorizar o espaço público e contribuir para ampliar a segurança no trânsito, eles educam todos os cidadãos brasileiros, crianças, adolescentes e adultos</p>
+        </div>
+
+    </div>
+
+    <div class="imagens">
+
+            <div class="img_cima">
+                <img src="../img/CONTRAN.png" alt="">
+            </div>
+
+            <div class="img_meio">
+                <img src="../img/dentran.png" alt="">
+            </div>
+
+            <div class="img_baixo">
+                <img src="../img/prefeitura_colorida.png" alt="">
+            </div>
+    </div>  
+
+
+</div>
+
+</body>
+</html>
