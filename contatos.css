@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Menu{
+    /* definindo a altura e cor */
+    height: 120px;
+    width: 100%;
+    background-color: #023859 ;
+
+    /* display do menu */
+    display: flex;
+    align-items: center;
+
+    /* posição do menu */
+    position:fixed;
+}
+
+.mini_menu{
+    /* border: 2px solid black; */
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap:12%;
+    justify-content: center;
+}
+
+.menu_esq{
+    /* border: 1px solid rebeccapurple; */
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.menu_dir{
+    /* border: 1px solid red; */
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1.8%;
+}
+
+
+
+.menu_icone_prefeitura{
+    /* border: 1px solid black; */
+    margin-left: 0;
+}
+
+.menu_icone_eptran{
+    /* border: 1px solid black; */
+    margin-right: 1%;
+    
+}
+
+
+.menu_icone_eptran > img {
+    width: 200px;
+}
+
+.menu_icone_prefeitura > img {
+    width: 200px;
+}
+
+.menu_inicio{
+    /* border: 1px solid black; */
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.botao{
+    padding: 13px 48px 13px 40px;
+    border-radius:6% / 20%;
+    background-color: #F2F2F2;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: start;
+    gap: 8%;
+}
+
+/* .botao > i {
+    /* border: 1px solid black; 
+} */
+.sep{
+    height: 120px;
+}
+
+.menu_linha{
+    height: 50px;
+    /* border: 1px solid black; */
+    background-color: #F2D06B ;
+    display: flex;
+    align-items: center;
+   
+}
+
+.linhas{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+}
+
+.centro{
+    background-color: #F21D2F;
+}
+
+footer{
+    background-color: #023859;
+    border: 1px solid black;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+    
+
+}
+
+.logos{
+    height: 60px;
+    width: 300px;
+}
