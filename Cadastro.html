@@ -40,13 +40,15 @@
                             <input type="date" id="cadastro_date" name="cadastro_date" required>
                         </div>
                         <div class="Genero cadastro_filhos">
-                            <label for="cadastro_genero">Gênero:</label>
+                            <div class="genero_label">
+                                <label for="cadastro_genero">Gênero:</label>
+                            </div>
                             <input type="radio" id="Feminino_form1" name="Genero_escolhido" value="Feminino" class="input_genero">
                             <label for="Feminino_form1" class="label_genero">Feminino</label>
                             <input type="radio" id="Masculino_form1" name="Genero_escolhido" value="Masculino" class="input_genero">
                             <label for="Masculino_form1" class="label_genero">Masculino</label>
-                            <input type="radio" id="Não_definido_form1" name="Genero_escolhido" value="Não definido" class="input_genero" checked="checked">
-                            <label for="Não definido" class="label_genero">Não definido</label >
+                            <input type="radio" id="Não_definido_form1" name="Genero_escolhido" value="Não definido" class="input_genero " checked="checked">
+                            <label for="Não definido" class="label_genero ">Não definido</label >
                         </div>
                         <div class="Rua_Telefone cadastro_filhos">
                             <label for="cadastro_rua">Rua:</label>
@@ -80,15 +82,16 @@
                         </div>
                         <div class="Escola cadastro_filhos">
                             <label for="cadastro_escola">Grau de Escolariedade:</label>
-                            <input type="list" list="cadastro_grau_escolariedade_opcoes" id="cadastro_grau_escolariedade" name="cadastro_escola" value="" onsubmit="validateInput()">
+                            <select name="cadastro_grau_escolariedade" id="cadastro_grau_escolariedade">
                             <datalist id="cadastro_grau_escolariedade_opcoes">
-                                <option value="Fundamental.">
-                                <option value="Médio.">
-                                <option value="Superior (Graduação).">
-                                <option value="Pós-graduação.">
-                                <option value="Mestrado.">
-                                <option value="Doutorado.">
-                                <option value="Outros.">
+                                <option value="Fundamental.">Fundamental</option>
+                                <option value="Médio.">Médio</option>
+                                <option value="Superior (Graduação).">Superior (Graduação)</option>
+                                <option value="Pós-graduação.">Pós-graduação</option>
+                                <option value="Mestrado.">Mestrado</option>
+                                <option value="Doutorado.">Doutorado</option>
+                                <option value="Outros.">Outros</option>
+                            </select>
                         </div>     
                     </div>        
                     <div class="Envio_Reset">
