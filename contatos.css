@@ -136,3 +136,16 @@ footer{
     height: 60px;
     width: 300px;
 }
+
+footer{
+    color: white;
+}
+
+.contatos{
+    text-align: start;
+    font-size: 16px;
+    margin-left: 75px;
+}
+
+
+
