@@ -106,6 +106,43 @@
 }
 
 
+.botao2{
+    display: flex;
+    flex-flow: row ;
+    padding: 13px 22px 13px 20px;
+    border-radius:6% / 20%;
+    background-color: var(--color5);
+    font-size: 22px;
+    color: black;
+    justify-content: center;
+    gap: 12%;
+    width: 210px;
+}
+
+.botao2 a {
+    color: black;
+    text-decoration: none;
+}
+
+.botao1{
+    display: flex;
+    flex-flow: row ;
+    padding: 13px 22px 13px 20px;
+    border-radius:6% / 20%;
+    background-color: var(--color5);
+    font-size: 22px;
+    color: black;
+    justify-content: center;
+    gap: 12%;
+    width: 160px;
+}
+
+.botao1 a {
+    color: black;
+    text-decoration: none;
+}
+
+
 .botao{
     padding: 13px 22px 13px 20px;
     border-radius:6% / 20%;
@@ -125,7 +162,7 @@
 .Menuzinho{
     width: 100%;
     height: 50px;
-    background-color: var(--color4);
+    background-color: var(--color3);
     display: flex;
     align-items: center;
     gap: 1%;
