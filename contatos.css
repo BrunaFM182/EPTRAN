@@ -337,6 +337,7 @@ footer{
     text-align: center;
     position: fixed;
     display: none; 
+    flex-flow: column;
     height: 72%;
     width: 9%;
     z-index: 2;
@@ -346,6 +347,7 @@ footer{
 .container_menu a {
     text-decoration: none;
     color: white;
+    font-size: 18px;
 }
 
 #show-or-hide{
@@ -377,4 +379,16 @@ footer{
 
 .centro{
     background-color: #F21D2F;
+}
+
+
+.link-menu:hover {  
+    background-color: #055282; 
+    transition: 0.3s;
+    padding: 8px;
+    border-radius: 10px;        
+}
+
+#link {
+    margin-top: 20px;
 }
