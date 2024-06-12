@@ -1,15 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chau+Philomene+One:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    z-index: 1;
+}
+
+
+:root{
+    --color1:#F21D2F;
+    --color2:#023859;
+    --color3:#F2B807;
+    --color4:#F2D06B;
+    --color5:#F2F2F2;
+}
+
+
+.sep{
+    height: 120px; ;
+}
+
+.sep2{
+    height: 50px; ;
 }
 
 .Menu{
     /* definindo a altura e cor */
     height: 120px;
     width: 100%;
-    background-color: #023859 ;
+    background-color: var(--color2) ;
 
     /* display do menu */
     display: flex;
@@ -25,8 +44,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    gap:12%;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .menu_esq{
@@ -35,7 +53,6 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 2%;
 }
 
 .menu_dir{
@@ -45,77 +62,242 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    padding-right: 1.8%;
 }
 
 
 
 .menu_icone_prefeitura{
     /* border: 1px solid black; */
-    margin-left: 0;
-}
+    background-image: url(img/logo_prefeitura.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:90% ;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}   
 
 .menu_icone_eptran{
-    /* border: 1px solid black; */
-    margin-right: 1%;
     
+    margin-right: 4%;
+    /* border: 1px solid black; */
+    background-image: url(img/logo_eptran.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:90% ;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-
-.menu_icone_eptran > img {
-    width: 200px;
-}
-
-.menu_icone_prefeitura > img {
-    width: 200px;
-}
 
 .menu_inicio{
     /* border: 1px solid black; */
     height: 60px;
-
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.botao{
-    padding: 13px 48px 13px 40px;
+.botao2{
+    display: flex;
+    flex-flow: row ;
+    padding: 13px 22px 13px 20px;
     border-radius:6% / 20%;
-    background-color: #F2F2F2;
+    background-color: var(--color5);
+    font-size: 22px;
+    color: black;
+    justify-content: center;
+    gap: 12%;
+    width: 210px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.botao1{
+    display: flex;
+    flex-flow: row ;
+    padding: 13px 22px 13px 20px;
+    border-radius:6% / 20%;
+    background-color: var(--color5);
+    font-size: 22px;
+    color: black;
+    justify-content: center;
+    gap: 12%;
+    width: 160px;
+}
+
+
+
+.botao{
+    padding: 13px 22px 13px 20px;
+    border-radius:6% / 20%;
+    background-color: var(--color5);
     font-size: 22px;
     text-decoration: none;
     color: black;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     gap: 8%;
+    width: 120%;
+    text-align: center;
 }
 
-/* .botao > i {
-    /* border: 1px solid black; 
-} */
-.sep{
-    height: 120px;
-}
 
-.menu_linha{
+
+.Menuzinho{
+    width: 100%;
     height: 50px;
-    /* border: 1px solid black; */
-    background-color: #F2D06B ;
+    background-color: var(--color3);
     display: flex;
     align-items: center;
-   
+    gap: 1%;
 }
 
-.linhas{
-    height: 30px;
-    width: 30px;
-    margin: 20px;
+.m_menu{
+    font-size: 300%;
+    color: black;
+    margin-left: 1%;
 }
 
-.centro{
-    background-color: #F21D2F;
+
+
+.titulo_menuz{
+    /* border: 1px  solid black; */
+    width: 100%;
+}
+
+.titulo_menuz .titulo_secundario_menuz{
+    display: none;
+}
+
+.titulo_menuz > *{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 110%;
+}
+
+
+
+@media (max-width: 1300px){
+
+    .mini_menu{
+        width: 50%;
+    }
+
+    .menu_esq{
+        width: 25%;
+    }
+
+    .menu_dir{
+        width: 25%;
+
+    }
+
+    .menu_jogos{
+        display: none;
+    }
+
+    .menu_videos{
+        display: none;
+    }
+
+
+
+}
+
+@media (max-width: 1000px){
+    .menu_contatos{
+        display: none;
+    }
+
+    .mini_menu{
+        width: 30%;
+    }
+
+    .menu_esq{
+        width: 35%;
+    }
+
+    .menu_dir{
+        width: 35%;
+
+    }
+
+    
+    .menu_inicio > a p{
+        display: none;
+    }
+
+    .menu_inicio > a i{
+        font-size: 150%;
+        text-align: center;
+
+    }
+
+    .botao{
+        padding: 10Px 35PX;
+        border-radius: 15% / 25%;
+        text-align: center;
+    }
+
+    .Menuzinho{
+        gap: 2%;
+    }
+}
+
+
+@media (max-width: 700px){
+
+    .menu_inicio{
+        display: none;
+    }
+
+    .mini_menu{
+        width: 10%;
+    }
+
+    .menu_esq{
+        width: 45%;
+    }
+
+    .menu_dir{
+        width: 45%;
+
+    }
+
+    .titulo_menuz .titulo_principal_menuz{
+        display: none;
+    }
+
+    .titulo_menuz .titulo_secundario_menuz{
+        display:block;
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .titulo_menuz{
+       width: 84%;
+    }
+
+    .barra_menuz{
+        /* border: 1px  solid black; */
+        width: 8%;
+    }
+
+    .Menuzinho{
+        gap:0;
+    }
 }
 
 footer{
@@ -172,4 +354,27 @@ footer{
     font-size: 40px;
     border: 0px;
 
+}
+
+.sep{
+    height: 120px;
+}
+
+.menu_linha{
+    height: 50px;
+    /* border: 1px solid black; */
+    background-color: #F2D06B ;
+    display: flex;
+    align-items: center;
+   
+}
+
+.linhas{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+}
+
+.centro{
+    background-color: #F21D2F;
 }
