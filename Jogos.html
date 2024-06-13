@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Jogos.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Prefeitura de Joinville</title>
 </head>
@@ -13,73 +13,109 @@
     <!-- topo da pag -->
     <header class="Menu">
         <div class="menu_esq">
-            <div class="menu_icone_prefeitura">
-                <img src="logo_prefeitura.png" alt="Logo_Prefeitura">
-            </div>
+            <div class="menu_icone_prefeitura"></div>
         </div>
         <div class="mini_menu" id="mini_menu">
             <div class="menu_inicio">
-            <a href="#" class="botao">
-                <i class='bx bx-home-alt-2'></i>
-                INICIO
-            </a>
+                <a href="#">
+                    <div id="botao" class="botao1" >
+                        <i class='bx bx-home-alt-2'></i>
+                            <p>INICIO</p> 
+                    </div>
+                </a>
             </div>
             <div class="menu_videos">
-                <a href="#" class="botao">
-                    <i class='bx bx-movie-play'></i>
-                    VÍDEOS
+                <a href="#">
+                    <div id="botao" class="botao1">
+                        <i class='bx bx-movie-play'></i>
+                            <p>VÍDEOS</p>
+                    </div>
                 </a>
             </div>
             <div class="menu_jogos">
-                <a href="#" class="botao">
-                    <i class='bx bx-game'></i>
-                    JOGOS
+                <a href="#" >
+                    <div id="botao" class="botao1">
+                        <i class='bx bx-game'></i>
+                            <p>JOGOS</p>
+                    </div>
                 </a>
             </div>
             <div class="menu_contatos">
-                <a href="#" class="botao">
-                    <i class='bx bx-chat' ></i>
-                    CONTATOS
+                <a href="#" >
+                    <div id="botao" class="botao2">
+                        <i class='bx bx-chat' ></i>
+                            <p>SOBRE NÓS</p>
+                    </div>
                 </a>
             </div>
         </div>
         <div class="menu_dir">
             <div class="menu_icone_eptran">
-                <img src="logo_eptran.png" alt="Logo_Prefeitura">
+
             </div>
         </div>
     </header>
-    <div class="sep"></div>
 
+    <div class="sep"></div>
+    
     <div class="menu_linha">
         <a href="#" >
-            <img src="../img/Bem vindo.png" alt="linhas" class="linhas">
+            <button id="show-or-hide">≡</button>
         </a>
         <p>ESCOLA PÚBLICA DE TRÂNSITO DE JOINVILLE - EPTRAN</p>
     </div>
-    
+
+    <div class="sep2"></div>
+
+    <div class="container_menu">
+        <a id="link" class="link-menu" href="https://www.youtube.com/watch?v=1w5SNKwBDKo" target="_blank">Sua conta</a><br>
+        <a class="link-menu" href="https://www.canva.com/design/DAF1ju6lvbE/1S_7DUyN0AWsBMwkrcIJKQ/edit" target="_blank">Configurações</a><br>
+        <a class="link-menu" href="https://github.com/BrunaFM182/EPTRAN/blob/main/contatos.html" target="_blank">Login e segurança</a><br>
+        <a class="link-menu" href="https://github.com/BrunaFM182/EPTRAN/blob/main/contatos.html" target="_blank">Notificações</a><br>
+        <a class="link-menu" href="https://github.com/BrunaFM182/EPTRAN/blob/main/contatos.html" target="_blank">Privacidade</a><br>
+        <a class="link-menu" href="https://github.com/BrunaFM182/EPTRAN/blob/main/contatos.html" target="_blank">Sair</a>
+
+    </div>
+   
+
     <div class="jogos">
         <h1>JOGOS</h1>
     </div>
     <div class="conteudo">
         <div class="iniciais c">
             <a href="#">
-                <img src="series iniciais.png" alt="">
+                <img id="container_jogos" src="img/series_iniciais.png" alt="">
             </a>
         </div>
 
         <div class="finais c">
             <a href="#">
-                <img src="series finais.png" alt="">
+                <img id="container_jogos" src="img/series_finais.png" alt="">
             </a>
         </div>   
 
         <div class="medio c">
             <a href="#">
-                <img src="ensino medio.png" alt="">
+                <img id="container_jogos" src="img/ensino_medio.png" alt="">
             </a>
         </div>
     </div>
     
+     <!-- rodapé -->
+
+     <footer>
+        <img class="logos" src="img/Logos_Footer.png" alt="">
+        <p class="contatos"><i>Contato EPTRAN</i><br>
+            +55 (47) 3431-1541 <br>
+            centraldeinformacoes@detran.sc.gov.br <br>
+        </p>
+        <p class="contatos"><i>Contato Sreet Nova</i><br>
+            +55 (47) 9917-2370 <br>
+            streetnova2023@gmail.com</p>
+    </footer>
+    
+   
+    <script src="script_jogos.js"></script>
+
 </body>
 </html>
