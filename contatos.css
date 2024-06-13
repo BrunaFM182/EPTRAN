@@ -72,8 +72,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height:90% ;
-    width: 90%;
+    height:80% ;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: start;
@@ -82,14 +82,14 @@
 
 .menu_icone_eptran{
     
-    margin-right: 4%;
+    margin-right: 8%;
     /* border: 1px solid black; */
     background-image: url(img/logo_eptran.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height:90% ;
-    width: 90%;
+    height:80% ;
+    width: 80%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -383,7 +383,7 @@ footer{
 
 
 .link-menu:hover {  
-    background-color: #055282; 
+    background-color: #045080; 
     transition: 0.3s;
     padding: 8px;
     border-radius: 10px;        
@@ -391,4 +391,12 @@ footer{
 
 #link {
     margin-top: 20px;
+}
+
+#botao:hover {
+    background-color: #045080; 
+    transition: 0.3s;
+    padding: 13px 22px 13px 20px;
+    border-radius: 10px;   
+    color: white;  
 }
