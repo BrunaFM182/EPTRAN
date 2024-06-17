@@ -301,6 +301,42 @@ a {
     }
 }
 
+.jogos{ 
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #023859;
+    text-decoration:underline;
+}
+
+.conteudo{
+    display: flex;   
+    justify-content: center;
+    /* margin: 70px; */
+    gap: 5%;   
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: auto;
+    height: 600px;
+}
+
+
+.c{
+    width: 25%;
+    /* border: 1PX SOLID BLACK; */
+
+}
+
+.medio{
+    width: 467px;
+}
+
+img {
+    width: 100%;
+    /* border: 1PX SOLID BLACK; */
+    border-radius: 8px;
+}
 
 /* rodapé */
 
@@ -408,54 +444,4 @@ footer{
     padding: 13px 22px 13px 20px;
     border-radius: 10px;   
     color: white;  
-}
-
-/* conteúdo */
-
-.suaConta {
-    width: 100%;
-    height: 100vh;
-    /* background-color: cadetblue; */
-}
-
-
-.jogos{ 
-    text-align: center;
-    font-size: 50px;
-    margin: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: overline 5px;
-    color: #023859;
-}
-
-.conteudo{
-    display: flex;   
-    justify-content: center;
-    /* margin: 70px; */
-    gap: 5%;   
-    /* border: 1px solid black; */
-    width: 100%;
-    margin: auto;
-    height: 600px;
-}
-
-
-.c{
-    width: 25%;
-    /* border: 1PX SOLID BLACK; */
-
-}
-img {
-     width: 100%;
-     /* border: 1PX SOLID BLACK; */
-}
-
-#container_jogos {
-    border-radius: 20px;
-}
-
-#container_jogos:hover {
-    -webkit-transform: scale(1.1);
-   transform: scale(1.1);
-   transition: transform .4s ease;
 }
