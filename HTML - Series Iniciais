@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>PREFEITURA DE JOINVILLE</title>
+</head>
+<body>
+    <!-- definindo as seçoes (div) -->
+
+    <!-- topo da pag -->
+    <header class="Menu">
+        <div class="menu_esq">
+            <div class="menu_icone_prefeitura"></div>
+        </div>
+        <div class="mini_menu" id="mini_menu">
+            <div class="menu_inicio">
+                <a href="#">
+                    <div id="botao" class="botao1" >
+                        <i class='bx bx-home-alt-2'></i>
+                            <p>INICIO</p> 
+                    </div>
+                </a>
+            </div>
+            <div class="menu_videos">
+                <a href="#">
+                    <div id="botao" class="botao1">
+                        <i class='bx bx-movie-play'></i>
+                            <p>VÍDEOS</p>
+                    </div>
+                </a>
+            </div>
+            <div class="menu_jogos">
+                <a href="#" >
+                    <div id="botao" class="botao1">
+                        <i class='bx bx-game'></i>
+                            <p>JOGOS</p>
+                    </div>
+                </a>
+            </div>
+            <div class="menu_contatos">
+                <a href="#" >
+                    <div id="botao" class="botao2">
+                        <i class='bx bx-chat' ></i>
+                            <p>SOBRE NÓS</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="menu_dir">
+            <div class="menu_icone_eptran">
+
+            </div>
+        </div>
+    </header>
+
+    <div class="sep"></div>
+    
+    <div class="menu_linha">
+        <a href="#" >
+            <button id="show-or-hide">≡</button>
+        </a>
+        <p>ESCOLA PÚBLICA DE TRÂNSITO DE JOINVILLE - EPTRAN</p>
+    </div>
+
+    <div class="sep2"></div>
+
+    <div class="container_menu">
+        <a id="link" class="link-menu" href="https://www.youtube.com/watch?v=1w5SNKwBDKo" target="_blank">Sua conta</a><br>
+        <a class="link-menu" href="https://www.canva.com/design/DAF1ju6lvbE/1S_7DUyN0AWsBMwkrcIJKQ/edit" target="_blank">Configurações</a><br>
+        <a class="link-menu" href="https://github.com/BrunaFM182/EPTRAN/blob/main/contatos.html" target="_blank">Login e segurança</a><br>
+        <a class="link-menu" href="https://github.com/BrunaFM182/EPTRAN/blob/main/contatos.html" target="_blank">Notificações</a><br>
+        <a class="link-menu" href="https://github.com/BrunaFM182/EPTRAN/blob/main/contatos.html" target="_blank">Privacidade</a><br>
+        <a class="link-menu" href="https://github.com/BrunaFM182/EPTRAN/blob/main/contatos.html" target="_blank">Sair</a>
+
+    </div>
+
+
+<!-- -------------------------------------------------------------- -->
+
+<div class="conteudo">
+
+    <div class="caixa_textos">
+        <div class="caixa_titulo"><h1>SERIES INICIAIS</h1></div>
+
+        <div class="regras"><h2>Regras do Jogo</h2></div>
+    </div>
+
+    <div class="video_img">
+
+        <div class="video"><iframe src="../img/VIideo_Eptran.mp4" frameborder="0"></iframe></div>
+
+        <div class="imagem"><img src="../img/criancas_calcada.png" alt=""></div>
+
+    </div>
+
+</div>
+
+<!-- -------------------------------------------------------------- -->
+
+    <footer>
+        <img class="logos" src="../img/detran.png" alt="">
+        <p class="contatos"><i>Contato EPTRAN</i><br>
+            +55 (47) 3431-1541 <br>
+            centraldeinformacoes@detran.sc.gov.br <br>
+        </p>
+        <p class="contatos"><i>Contato Sreet Nova</i><br>
+            +55 (47) 9917-2370 <br>
+            streetnova2023@gmail.com</p>
+    </footer>
+    
+   
+    <script src="funcao.js"></script>
+
+</body>
+</html>
