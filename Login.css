@@ -1,18 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chau+Philomene+One:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* menu */
+
+:root{
+    --color1:#F21D2F;
+    --color2:#023859;
+    --color3:#F2B807;
+    --color4:#F2D06B;
+    --color5:#F2F2F2;
+}
+
+
+.sep{
+    height: 120px; ;
+}
+
+.sep2{
+    height: 50px; ;
+}
+
 .Menu{
     /* definindo a altura e cor */
     height: 120px;
     width: 100%;
-    background-color: #004aad ;
+    background-color: var(--color2) ;
 
     /* display do menu */
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     /* posição do menu */
     position:fixed;
@@ -24,8 +46,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    gap:12%;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .menu_esq{
@@ -34,7 +55,6 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 2%;
 }
 
 .menu_dir{
@@ -44,52 +64,340 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    padding-right: 1.8%;
 }
 
 
 
 .menu_icone_prefeitura{
     /* border: 1px solid black; */
-    margin-left: 0;
-}
+    background-image: url(img/logo_prefeitura.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:80% ;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}   
 
 .menu_icone_eptran{
+    
+    margin-right: 8%;
     /* border: 1px solid black; */
-    margin-right: 1%;
+    background-image: url(img/logo_eptran.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:80% ;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-.menu_icone_prefeitura > img {
-    width: 200px;
-}
 
 .menu_inicio{
     /* border: 1px solid black; */
     height: 60px;
-
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.botao{
-    padding: 13px 48px 13px 40px;
+.botao2{
+    display: flex;
+    flex-flow: row ;
+    padding: 13px 22px 13px 20px;
     border-radius:6% / 20%;
-    background-color: azure;
+    background-color: var(--color5);
+    font-size: 22px;
+    color: black;
+    justify-content: center;
+    gap: 12%;
+    width: 210px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.botao1{
+    display: flex;
+    flex-flow: row ;
+    padding: 13px 22px 13px 20px;
+    border-radius:6% / 20%;
+    background-color: var(--color5);
+    font-size: 22px;
+    color: black;
+    justify-content: center;
+    gap: 12%;
+    width: 160px;
+}
+
+
+
+.botao{
+    padding: 13px 22px 13px 20px;
+    border-radius:6% / 20%;
+    background-color: var(--color5);
     font-size: 22px;
     text-decoration: none;
     color: black;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     gap: 8%;
+    width: 120%;
+    text-align: center;
 }
 
+
+
+.Menuzinho{
+    width: 100%;
+    height: 50px;
+    background-color: var(--color3);
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+
+.m_menu{
+    font-size: 300%;
+    color: black;
+    margin-left: 1%;
+}
+
+
+
+.titulo_menuz{
+    /* border: 1px  solid black; */
+    width: 100%;
+}
+
+.titulo_menuz .titulo_secundario_menuz{
+    display: none;
+}
+
+.titulo_menuz > *{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 110%;
+}
+
+
+
+@media (max-width: 1300px){
+
+    .mini_menu{
+        width: 50%;
+    }
+
+    .menu_esq{
+        width: 25%;
+    }
+
+    .menu_dir{
+        width: 25%;
+
+    }
+
+    .menu_jogos{
+        display: none;
+    }
+
+    .menu_videos{
+        display: none;
+    }
+
+
+
+}
+
+@media (max-width: 1000px){
+    .menu_contatos{
+        display: none;
+    }
+
+    .mini_menu{
+        width: 30%;
+    }
+
+    .menu_esq{
+        width: 35%;
+    }
+
+    .menu_dir{
+        width: 35%;
+    }
+
+    
+    .menu_inicio > a p{
+        display: none;
+    }
+
+    .menu_inicio > a i{
+        font-size: 150%;
+        text-align: center;
+
+    }
+
+    .botao{
+        padding: 10Px 35PX;
+        border-radius: 15% / 25%;
+        text-align: center;
+    }
+
+    .Menuzinho{
+        gap: 2%;
+    }
+}
+
+
+@media (max-width: 700px){
+
+    .menu_inicio{
+        display: none;
+    }
+
+    .mini_menu{
+        width: 10%;
+    }
+
+    .menu_esq{
+        width: 45%;
+    }
+
+    .menu_dir{
+        width: 45%;
+
+    }
+
+    .titulo_menuz .titulo_principal_menuz{
+        display: none;
+    }
+
+    .titulo_menuz .titulo_secundario_menuz{
+        display:block;
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .titulo_menuz{
+       width: 84%;
+    }
+
+    .barra_menuz{
+        /* border: 1px  solid black; */
+        width: 8%;
+    }
+
+    .Menuzinho{
+        gap:0;
+    }
+}
+
+
+/* rodapé */
+
+footer{
+    background-color: #023859;
+    border: 1px solid black;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+    width: 100%;
+
+}
+
+.logos{
+    height: 60px;
+    width: 300px;
+}
+
+footer{
+    color: white;
+}
+
+.contatos{
+    text-align: start;
+    font-size: 16px;
+    margin-left: 75px;
+}
+
+/* icone/container-menu */
+
+.container_menu{
+    background-color: #023859;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    display: none; 
+    flex-flow: column;
+    height: 100%;
+    width: 9%;
+    z-index: 2;
+    /* visibility: hidden;  */
+}
+
+.container_menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#show-or-hide{
+    margin: 8px;
+    background-color: transparent;
+    font-size: 40px;
+    border: 0px;
+
+}
 
 .sep{
     height: 120px;
 }
 
+
+.linhas{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+}
+
+.centro{
+    background-color: #F21D2F;
+}
+
+
+.link-menu:hover {  
+    background-color: #045080; 
+    transition: 0.3s;
+    padding: 8px;
+    border-radius: 10px;        
+}
+
+#link {
+    margin-top: 20px;
+}
+
+#botao:hover {
+    background-color: #045080; 
+    transition: 0.3s;
+    padding: 13px 22px 13px 20px;
+    border-radius: 10px;   
+    color: white;  
+}
 
 *{
     padding: 0;
@@ -111,16 +419,18 @@
 }
 
 label{
-
-    display: block;
+    display: flex;
     margin-bottom: 25px;
     color: #486590;
+    align-items: center;
+    font: normal 14pt Arial;
     
 }
 
 .se{
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 
@@ -132,19 +442,35 @@ h1{
 }
 
 .formulario{
-    border: 2px solid black ;
+    box-shadow: 3px 3px 4px  rgba(0, 0, 0, 0.219);
     align-items: center; 
     text-align: center;
     border-radius: 20px;  
     padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
 }
 
+
 .dados{
-    width: 250px;
-    height: 25px;
-    border: 1px solid;
+    width: 300px;
+    height: 30px;
+    border: none;
+    background-color: #c0c0c059;
     border-radius: 15px;
-    background-color: #E2EFF8;;
+}
+
+.dados:hover{
+    background-color: #0238591a;
+    border: 1px solid black;
 }
 
 .informacao{
@@ -157,12 +483,38 @@ h1{
 }
 
 .enviar{
-    width: 120px;
-    height: 35px;
+    width: 150px;
+    height: 38px;
     border-radius: 20px;
     margin-top: 40px;
-    background-color: #004AAD;
+    background-color: #023859;
     color: white;
-
+    border: none;
 
 }
+
+.enviar:hover{
+    background-color: #023859d3;
+}
+
+img {
+  width: 100%;
+  height: 800px;
+}
+
+#imagem {
+    filter: blur(4px);
+    margin-top: 120px;
+}
+
+i{
+    margin-left: 5px;
+    font: normal 12pt Arial;
+    font-style: italic;
+    display: flex;
+}
+
+#esqueceuSenha {
+    color: rgb(201, 30, 30);
+}
+
