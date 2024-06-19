@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chau+Philomene+One:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* menu */
+
+:root{
+    --color1:#F21D2F;
+    --color2:#023859;
+    --color3:#F2B807;
+    --color4:#F2D06B;
+    --color5:#F2F2F2;
+}
+
+
+.sep{
+    height: 120px; ;
+}
+
+.sep2{
+    height: 50px; ;
+}
+
+.Menu{
+    /* definindo a altura e cor */
+    height: 120px;
+    width: 100%;
+    background-color: var(--color2) ;
+
+    /* display do menu */
+    display: flex;
+    align-items: center;
+
+    /* posição do menu */
+    position:fixed;
+}
+
+.mini_menu{
+    /* border: 2px solid black; */
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu_esq{
+    /* border: 1px solid rebeccapurple; */
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu_dir{
+    /* border: 1px solid red; */
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+
+.menu_icone_prefeitura{
+    /* border: 1px solid black; */
+    background-image: url(../img/logo_prefeitura.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:80% ;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}   
+
+.menu_icone_eptran{
+    
+    margin-right: 8%;
+    /* border: 1px solid black; */
+    background-image: url(../img/eptran.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:80% ;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.menu_inicio{
+    /* border: 1px solid black; */
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.botao2{
+    display: flex;
+    flex-flow: row ;
+    padding: 13px 22px 13px 20px;
+    border-radius:6% / 20%;
+    background-color: var(--color5);
+    font-size: 22px;
+    color: black;
+    justify-content: center;
+    gap: 12%;
+    width: 210px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.botao1{
+    display: flex;
+    flex-flow: row ;
+    padding: 13px 22px 13px 20px;
+    border-radius:6% / 20%;
+    background-color: var(--color5);
+    font-size: 22px;
+    color: black;
+    justify-content: center;
+    gap: 12%;
+    width: 160px;
+}
+
+
+
+.botao{
+    padding: 13px 22px 13px 20px;
+    border-radius:6% / 20%;
+    background-color: var(--color5);
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    width: 120%;
+    text-align: center;
+}
+
+
+
+.Menuzinho{
+    width: 100%;
+    height: 50px;
+    background-color: var(--color3);
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+
+.m_menu{
+    font-size: 300%;
+    color: black;
+    margin-left: 1%;
+}
+
+
+
+.titulo_menuz{
+    /* border: 1px  solid black; */
+    width: 100%;
+}
+
+.titulo_menuz .titulo_secundario_menuz{
+    display: none;
+}
+
+.titulo_menuz > *{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 110%;
+}
+
+
+
+@media (max-width: 1300px){
+
+    .mini_menu{
+        width: 50%;
+    }
+
+    .menu_esq{
+        width: 25%;
+    }
+
+    .menu_dir{
+        width: 25%;
+
+    }
+
+    .menu_jogos{
+        display: none;
+    }
+
+    .menu_videos{
+        display: none;
+    }
+
+
+
+}
+
+@media (max-width: 1000px){
+    .menu_contatos{
+        display: none;
+    }
+
+    .mini_menu{
+        width: 30%;
+    }
+
+    .menu_esq{
+        width: 35%;
+    }
+
+    .menu_dir{
+        width: 35%;
+
+    }
+
+    
+    .menu_inicio > a p{
+        display: none;
+    }
+
+    .menu_inicio > a i{
+        font-size: 150%;
+        text-align: center;
+
+    }
+
+    .botao{
+        padding: 10Px 35PX;
+        border-radius: 15% / 25%;
+        text-align: center;
+    }
+
+    .Menuzinho{
+        gap: 2%;
+    }
+}
+
+
+@media (max-width: 700px){
+
+    .menu_inicio{
+        display: none;
+    }
+
+    .mini_menu{
+        width: 10%;
+    }
+
+    .menu_esq{
+        width: 45%;
+    }
+
+    .menu_dir{
+        width: 45%;
+
+    }
+
+    .titulo_menuz .titulo_principal_menuz{
+        display: none;
+    }
+
+    .titulo_menuz .titulo_secundario_menuz{
+        display:block;
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .titulo_menuz{
+       width: 84%;
+    }
+
+    .barra_menuz{
+        /* border: 1px  solid black; */
+        width: 8%;
+    }
+
+    .Menuzinho{
+        gap:0;
+    }
+}
+
+/* -------------------------------------------------------------- */
+
+footer{
+    background-color: #023859;
+    border: 1px solid black;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+    
+
+}
+
+.logos{
+    height: 60px;
+    width: 300px;
+}
+
+footer{
+    color: white;
+}
+
+.contatos{
+    text-align: start;
+    font-size: 16px;
+    margin-left: 75px;
+}
+
+/* icone/container-menu */
+
+.container_menu{
+    background-color: #023859;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    display: none; 
+    flex-flow: column;
+    height: 100%;
+    width: 9%;
+    z-index: 2;
+    /* visibility: hidden;  */
+}
+
+.container_menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#show-or-hide{
+    margin: 8px;
+    background-color: transparent;
+    font-size: 40px;
+    border: 0px;
+
+}
+
+.sep{
+    height: 120px;
+}
+
+
+
+.menu_linha{
+    height: 50px;
+    /* border: 1px solid black; */
+    background-color: #F2D06B ;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+
+.linhas{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+}
+
+.centro{
+    background-color: #F21D2F;
+}
+
+
+.link-menu:hover {  
+    background-color: #045080; 
+    transition: 0.3s;
+    padding: 8px;
+    border-radius: 10px;        
+}
+
+#link {
+    margin-top: 20px;
+}
+
+#botao:hover {
+    background-color: #045080; 
+    transition: 0.3s;
+    padding: 13px 22px 13px 20px;
+    border-radius: 10px;   
+    color: white;  
+}
+
+
+/* -------------------------------------------------------------- */
+
+.conteudo{
+
+    height: 750px;
+    width: 1900px;
+    display: flex;
+
+}
+
+.caixa_textos{
+
+    width: 600px;
+    height: 750px;
+
+}
+
+
+
+h1{
+
+margin-top: 80px;
+font-size: 50px;
+font-weight: 50;
+font-family: "Arimo", sans-serif;
+color: #B04C6E;
+text-decoration: underline;
+margin-left: 140px;
+
+}
+
+h2{
+
+ font-size: 38px;
+ font-family: "Open Sans", sans-serif;
+ font-weight: 50;
+
+}
+
+.regras{
+
+    margin-top: 100px;
+    margin-left: 110px;
+    width: 450px;
+    height: 450px;
+    background-color: #EFEBEB;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.imagem{
+
+    margin-left: 375px;
+
+}
+
+iframe{
+
+width: 650px;
+height: 350px;
+border-radius: 20px;
+margin-top: 20px;
+margin-left: 450px;
+
+}
+
+img{
+
+    width: 800px;
+    height: 375px;
+
+}
