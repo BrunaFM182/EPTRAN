@@ -490,7 +490,22 @@ h1{
     background-color: #023859;
     color: white;
     border: none;
+    margin-right: 10px;
 
+}
+
+.cadastrar{
+    width: 150px;
+    height: 38px;
+    border-radius: 20px;
+    margin-top: 40px;
+    background-color: #023859c7;
+    color: white;
+    border: none;
+}
+
+.cadastrar:hover{
+    background-color: #023859d3;
 }
 
 .enviar:hover{
