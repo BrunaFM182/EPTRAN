@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+    font-size: 110%;
 }
 
 /* menu */
@@ -25,6 +30,15 @@
     height: 50px; ;
 }
 
+.user_area {
+    display: flex;
+    width: 20%;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 1%;
+}
+
 .Menu{
     /* definindo a altura e cor */
     height: 120px;
@@ -41,7 +55,7 @@
 
 .mini_menu{
     /* border: 2px solid black; */
-    width: 70%;
+    width: 65%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -69,7 +83,7 @@
 
 .menu_icone_prefeitura{
     /* border: 1px solid black; */
-    background-image: url(img/logo_prefeitura.png);
+    background-image: url(img/fortnite-fortnite-dance.gif);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -85,7 +99,7 @@
     
     margin-right: 8%;
     /* border: 1px solid black; */
-    background-image: url(img/logo_eptran.png);
+    background-image: url(img/fortnite-fortnite-dance.gif);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -104,6 +118,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+#aaa{
+    font-size: 400%;
+    color: white;
+    /* border: 1px solid black; */
 }
 
 
@@ -118,6 +139,20 @@
     justify-content: center;
     gap: 12%;
     width: 210px;
+}
+
+.botao3{
+    display: flex;
+    flex-flow: row ;
+    border-radius:10% / 50%;
+    background-color: var(--color4);
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 35px;
 }
 
 a {
@@ -403,11 +438,14 @@ footer{
 }
 
 #botao:hover {
-    background-color: #045080; 
+    background-color: wheat; 
     transition: 0.3s;
-    padding: 13px 22px 13px 20px;
-    border-radius: 10px;   
-    color: white;  
+    color: black;  
+}
+
+#aaa:hover {
+    transition: 0.3s;
+    color: wheat;  
 }
 
 /* conteúdo */
@@ -417,6 +455,5 @@ footer{
     height: 100vh;
     /* background-color: cadetblue; */
 }
-
 
 
