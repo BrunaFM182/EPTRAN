@@ -1,0 +1,40 @@
+.Telavideos{
+    height: 850px;
+    background: url(img/videos\ fundo.png);
+    background-size: contain;
+    background-position: center;
+    display: flex;
+}
+
+.esquerda_Telavideos {
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.esquerda_Telavideos {
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.direita_Telavideos {
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
