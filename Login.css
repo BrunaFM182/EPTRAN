@@ -70,7 +70,7 @@
 
 .menu_icone_prefeitura{
     /* border: 1px solid black; */
-    background-image: url(img/logo_prefeitura.png);
+    background-image: url(../img/logo_prefeitura.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@
     
     margin-right: 8%;
     /* border: 1px solid black; */
-    background-image: url(img/logo_eptran.png);
+    background-image: url(../img/Eptran.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -533,3 +533,11 @@ i{
     color: rgb(201, 30, 30);
 }
 
+body{
+
+    background-image:url(../img/joiniville_img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+
+}
